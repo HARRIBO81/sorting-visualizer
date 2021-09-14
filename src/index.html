@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="C:\Users\user\Downloads\p5.js"></script>
+    <script src="sortingAlgorithms/quickSort.js" type="text/javascript"></script> 
+    <script src="sortingAlgorithms/mergeSort.js" type="text/javascript"></script> 
+    <script src="sortingAlgorithms/bubbleSort.js" type="text/javascript"></script> 
+    <script src="sortingAlgorithms/insertionSort.js" type="text/javascript"></script> 
+    <script src="newArray.js" type="text/javascript"></script> 
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualzier</title>
+</head>
+
+<body>
+    <p class="title">Sorting Visualzier by Ryan Javid</p>
+    <p class="text">Sorting Speed</p>
+    <nav class="navBar">
+        <button class="button" id="b1" onclick="resetArray();">New Array</button>
+        <button class="button" id="b2" onclick="quickSort(values, 0, values.length - 1);">Quick Sort</button>
+        <button class="button" id="b3" onclick="mergeSort(values);">Merge Sort</button>
+        <button class="button" id="b4" onclick="bubbleSort(values, 0, values.length-1);">Bubble Sort</button>
+        <button class="button" id="b4" onclick="insertionSort(values, values.length-1);">Insertion Sort</button>
+        <input id="range" class="slider" max="50" min="0" type="range" value="25">
+    </nav>
+    <script src="newArray.js"></script>
+</body>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color:#6a7b8b
+    }
+
+    canvas {
+        display: block;
+
+    }
+</style>
+</html>
